@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/activity_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="gov.nasa.arc.irg.astrobee.android_ros_bridge.MainActivity">
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="300sp"
+        android:layout_height="150sp"
+        android:src="@drawable/astrobee_spheres_logo_small"
+        android:layout_above="@+id/RelativeLayout01"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"/>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <Button
+            android:id="@+id/btn_startService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_StartService">
+        </Button>
+
+        <Button
+            android:id="@+id/btn_stopService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/btn_StopService" >
+        </Button>
+    </RelativeLayout>
+</LinearLayout>

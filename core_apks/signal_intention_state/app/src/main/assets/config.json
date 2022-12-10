@@ -1,0 +1,46 @@
+{
+  "signal_states": [
+    {
+      "ros_state_name": "SUCCESS",
+      "type": "sequential",
+      "local_video_name": "astrobee_success",
+      "next_default_state": "CLEAR"
+    },
+    {
+      "ros_state_name": "SLEEP",
+      "type": "sequential",
+      "local_video_name": "astrobee_going_to_sleep",
+      "next_default_state": "VIDEO_OFF"
+    },
+    {
+      "ros_state_name": "WAKE",
+      "type": "sequential",
+      "local_video_name": "astrobee_wake_up",
+      "next_default_state": "CLEAR"
+    },
+    {
+      "ros_state_name": "CLEAR",
+      "type": "loop",
+      "local_video_name": "astrobee_neutral"
+    },
+    {
+      "ros_state_name": "THURST_FOWARD",
+      "type": "loop",
+      "local_video_name": "astrobee_moving_forward"
+    },
+    {
+      "ros_state_name": "TURN_LEFT",
+      "type": "loop",
+      "local_video_name": "astrobee_turn_left_all"
+    },
+    {
+      "ros_state_name": "VIDEO_ON",
+      "type": "app_runner",
+      "next_default_state": "WAKE"
+    },
+    {
+      "ros_state_name": "VIDEO_OFF",
+      "type": "app_idle"
+    }
+  ]
+}

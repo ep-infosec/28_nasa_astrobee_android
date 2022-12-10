@@ -1,0 +1,10 @@
+rootProject.name = 'astrobee_api'
+
+include (
+  'gs-stub',
+  'gs-example',
+  'api',
+  'ros',
+  'ros-example',
+)
+

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Android ROS Bridge</string>
+
+    <string name="local_service_label">GuestScience Service</string>
+    <string name="label_start_service">Start Service</string>
+    <string name="service_started">Service Started!</string>
+    <string name="service_stopped">Service Stopped!</string>
+
+    <string name="btn_StartService">Start Service</string>
+    <string name="btn_StopService">Stop Service</string>
+
+</resources>
